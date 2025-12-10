@@ -1,0 +1,1 @@
+export const generateRandomNum = () => Math.round(Math.random() * (8 - 1) + 1);

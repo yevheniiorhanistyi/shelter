@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Pets</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header header-pets">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <h1 class="title logo__title">Cozy House</h1>
+          <p class="logo__subtitle">Shelter for pets in Boston</p>
+        </a>
+
+        <nav class="nav">
+          <button class="btn btn-burger" aria-label="Toggle navigation">
+            <span class="btn-burger__line"></span>
+          </button>
+          <ul class="nav-wrapper">
+            <li class="nav-wrapper__item">
+              <a class="nav-wrapper__item-link" href="index.html">About the
+                shelter</a>
+            </li>
+            <li class="nav-wrapper__item">
+              <a class="nav-wrapper__item-link nav-wrapper__item-link--active" href="#">Our
+                pets</a>
+            </li>
+            <li class="nav-wrapper__item">
+              <a class="nav-wrapper__item-link" href="index.html#help">Help the shelter</a>
+            </li>
+            <li class="nav-wrapper__item">
+              <a class="nav-wrapper__item-link" href="#footer">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section section-pagination">
+      <div class="container">
+        <div class="pagination">
+          <h2 class="title pagination__title">Our friends who <br>
+            are looking for a house</h2>
+          <div class="pagination__content"></div>
+          <div class="navigation">
+            <button class="btn btn__secondary btn-pagination btn-pagination--disabled btn-start" data-nav="start"
+              disabled>&lt;&lt;</button>
+            <button class="btn btn__secondary btn-pagination btn-pagination--disabled btn-prev" data-nav="prev"
+              disabled>&lt;</button>
+            <button class="btn btn__secondary btn-pagination btn-pagination--active current-page" disabled>1</button>
+            <button class="btn btn__secondary btn-pagination btn-next" data-nav="next">&gt;</button>
+            <button class="btn btn__secondary btn-pagination btn-end" data-nav="end">&gt;&gt;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <div class="contacts">
+        <h3 class="title contacts__title">For questions and suggestions</h3>
+        <div class="contacts-wrapper">
+          <img class="contacts-wrapper__icon" width="40" height="26" src="./images/footer-icons/icon-email.svg"
+            alt="Email">
+          <a class="contacts-wrapper__link" href="mailto:email@shelter.com">email@shelter.com</a>
+        </div>
+        <div class="contacts-wrapper">
+          <img class="contacts-wrapper__icon" width="40" height="26" src="./images/footer-icons/icon-phone.svg"
+            alt="Phone">
+          <a class="contacts-wrapper__link" href="tel:+136745677554">+13 674 567 75 54</a>
+        </div>
+      </div>
+      <div class="location">
+        <h3 class="title location__title">We are waiting for your visit</h3>
+        <div class="location-wrapper">
+          <img class="location-wrapper__icon" width="22" height="32" src="./images/footer-icons/icon-marker.svg"
+            alt="Address">
+          <a class="location-wrapper__link" href="https://goo.gl/maps/54ZyiiF4eyTjqaWJ7" target="_blank">1
+            Central Street, Boston (entrance
+            from the store)</a>
+        </div>
+        <div class="location-wrapper">
+          <img class="location-wrapper__icon" width="22" height="32" src="./images/footer-icons/icon-marker.svg"
+            alt="Address">
+          <a class="location-wrapper__link" href="https://goo.gl/maps/9pZSakxosTbDJUKN6" target="_blank">18
+            South Park, London </a>
+        </div>
+      </div>
+      <img class="footer-content__image" width="300" height="310" src="./images/pets/footer-puppy.png" alt="Puppy">
+    </div>
+  </footer>
+  <div class="overlay">
+    <div class="modal"></div>
+  </div>
+  <script src="./js/pets.js" type="module"></script>
+</body>
+
+</html>

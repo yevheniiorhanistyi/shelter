@@ -1,0 +1,39 @@
+@keyframes move-to-left {
+  from {
+    left: 0
+  }
+
+  to {
+    left: +100%
+  }
+}
+
+.transition-to-left {
+  animation-name: move-to-left;
+  animation-duration: 2s;
+}
+
+@keyframes move-to-right {
+  from {
+    left: 0
+  }
+
+  to {
+    left: -100%
+  }
+}
+
+.transition-to-right {
+  animation-name: move-to-right;
+  animation-duration: 2s;
+}
+
+@keyframes smoothShow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
